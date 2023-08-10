@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.aprilemptycomposematerial3"
+    namespace = "com.example.Augustemptycomposematerial3"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.aprilemptycomposematerial3"
+        applicationId = "com.example.Augustemptycomposematerial3"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

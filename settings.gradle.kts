@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "April Empty Compose Material3"
+rootProject.name = "August Empty Compose Material3"
 include(":app")
 include(":secondappmodule")
 include(":apptemplatebase")

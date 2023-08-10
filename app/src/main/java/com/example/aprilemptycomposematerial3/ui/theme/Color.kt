@@ -1,4 +1,4 @@
-package com.example.aprilemptycomposematerial3.ui.theme
+package com.example.Augustemptycomposematerial3.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

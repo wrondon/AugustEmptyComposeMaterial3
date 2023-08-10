@@ -40,7 +40,7 @@ import androidx.lifecycle.Lifecycle.State.STARTED
 import androidx.lifecycle.repeatOnLifecycle
 
 import androidx.compose.material3.ExperimentalMaterial3Api
-import com.example.apptemplatebase.ui.theme.AprilEmptyComposeMaterial3Theme
+import com.example.apptemplatebase.ui.theme.AugustEmptyComposeMaterial3Theme
 
 @Composable
 fun DataItemTypeScreen(modifier: Modifier = Modifier, viewModel: DataItemTypeViewModel = hiltViewModel()) {
@@ -97,7 +97,7 @@ internal fun DataItemTypeScreen(
 @Preview(showBackground = true)
 @Composable
 private fun DefaultPreview() {
-    AprilEmptyComposeMaterial3Theme  {
+    AugustEmptyComposeMaterial3Theme  {
         DataItemTypeScreen(listOf("Compose", "Room", "Kotlin"), onSave = {})
     }
 }
@@ -105,7 +105,7 @@ private fun DefaultPreview() {
 @Preview(showBackground = true, widthDp = 480)
 @Composable
 private fun PortraitPreview() {
-    AprilEmptyComposeMaterial3Theme  {
+    AugustEmptyComposeMaterial3Theme  {
         DataItemTypeScreen(listOf("Compose", "Room", "Kotlin"), onSave = {})
     }
 }

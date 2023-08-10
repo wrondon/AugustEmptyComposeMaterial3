@@ -1,4 +1,4 @@
-package com.example.aprilemptycomposematerial3.ui.theme
+package com.example.Augustemptycomposematerial3.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun AprilEmptyComposeMaterial3Theme(
+fun AugustEmptyComposeMaterial3Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
