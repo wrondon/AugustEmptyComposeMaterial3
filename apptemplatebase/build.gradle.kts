@@ -2,8 +2,7 @@ plugins {
     id ("com.android.application")
     id ("org.jetbrains.kotlin.android")
     id ("androidx.navigation.safeargs.kotlin")
-    id ("kotlin-kapt")
-    id ("com.google.devtools.ksp") version "1.8.10-1.0.9"
+    id ("com.google.devtools.ksp")
     id ("dagger.hilt.android.plugin")
     id ("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
 }
@@ -44,7 +43,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.2"
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packagingOptions {
         resources {
@@ -53,9 +52,6 @@ android {
     }
 }
 
-kapt {
-    correctErrorTypes =  true
-}
 
 dependencies {
 
@@ -80,8 +76,10 @@ dependencies {
     debugImplementation ("androidx.compose.ui:ui-tooling")
     debugImplementation ("androidx.compose.ui:ui-test-manifest")
 //////////////
-    implementation( "com.google.devtools.ksp:symbol-processing-api:1.8.20-Beta-1.0.9")
-    kapt ("com.google.dagger:hilt-compiler:2.45")
+
+    implementation("com.google.dagger:hilt-android:2.47")
+    ksp ("com.google.dagger:hilt-compiler:2.47")
+
     implementation( "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
 
     /// Dec, 2022
@@ -135,11 +133,6 @@ dependencies {
     ///// Navigation DSL
     api ("androidx.navigation:navigation-fragment-ktx:$nav_version")
 
-    ////// HILT-DAGGER
-    implementation( "com.google.dagger:hilt-android:2.45")
-    ///   ksp ("com.google.dagger:hilt-compiler:2.45")
-    implementation( "androidx.hilt:hilt-navigation-compose:1.0.0")
-
     ////// ROOM
     val room_version = "2.5.1"
 
@@ -177,11 +170,6 @@ dependencies {
 
     // Saved state module for ViewModel
     implementation( "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1")
-
-    // Annotation processor
-    ////kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
-    // alternately - if using Java8, use the following instead of lifecycle-compiler
-    ///////implementation( "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
     // optional - helpers for implementing LifecycleOwner in a Service
     implementation( "androidx.lifecycle:lifecycle-service:2.6.1")
@@ -222,7 +210,7 @@ dependencies {
     implementation("com.squareup.moshi:moshi:1.14.0")
     implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
     implementation("com.squareup.moshi:moshi-adapters:1.14.0")
-    // kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
+
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
 
     ////okhttp
