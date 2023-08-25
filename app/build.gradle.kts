@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.example.Augustemptycomposematerial3"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.Augustemptycomposematerial3"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -110,20 +110,20 @@ dependencies {
     ////// NAVIGATION - ALL (VIEWS, etc)
 
     // Kotlin
-    implementation( "androidx.navigation:navigation-fragment-ktx:2.6.0")
-    implementation( "androidx.navigation:navigation-ui-ktx:2.6.0")
+    implementation( "androidx.navigation:navigation-fragment-ktx:2.7.1")
+    implementation( "androidx.navigation:navigation-ui-ktx:2.7.1")
 
     // Feature module Support
-    implementation( "androidx.navigation:navigation-dynamic-features-fragment:2.6.0")
+    implementation( "androidx.navigation:navigation-dynamic-features-fragment:2.7.1")
 
     // Testing Navigation
-    androidTestImplementation ("androidx.navigation:navigation-testing:2.6.0")
+    androidTestImplementation ("androidx.navigation:navigation-testing:2.7.1")
 
     // Jetpack Compose Integration
-    implementation( "androidx.navigation:navigation-compose:2.6.0")
+    implementation( "androidx.navigation:navigation-compose:2.7.1")
 
     ///// Navigation DSL
-    api ("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    api ("androidx.navigation:navigation-fragment-ktx:2.7.1")
 
     ////// HILT-DAGGER
     implementation( "com.google.dagger:hilt-android:2.47")
@@ -207,7 +207,7 @@ dependencies {
     implementation("com.squareup.moshi:moshi:1.15.0")
     implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
     implementation("com.squareup.moshi:moshi-adapters:1.15.0")
-    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
 
     ////okhttp
     ////implementation(("com.squareup.okhttp3:okhttp:4.9.3")
